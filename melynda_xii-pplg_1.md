@@ -1,0 +1,2 @@
+Supaya branch main tetap aman dan tidak langsung berubah kalau ada kesalahan. Setiap anggota bisa mengerjakan fitur di branch masing-masing terlebih dahulu, lalu dicek sebelum digabungkan ke main.
+git clone https://github.com/japar-sodik/sts_version_control.git -> cd sts_version_control -> git checkout -b jawaban-[nama-siswa-kelas] -> git add [nama_kelas].md-> git commit -m "Menambahkan jawaban studi kasus" -> git push -u origin jawaban-[nama-siswa-kelas]
