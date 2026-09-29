@@ -1,0 +1,16 @@
+1. agar kode yang belum selesai atau masih memiliki kesalahan tidak langsung masuk ke main. dengan begitu, risiko production crash bisa dikurangi dan kode dapat diperiksa terlebih dahulu melalui pull request
+
+2. //membuat branch fitur baru
+git checkout -b fitur-mfa
+
+//mengecek perubahan
+git status
+
+//menyimpan perubahan ke staging
+git add .
+
+//menyimpan progres lokal
+git commit -m "Menambahkan fitur autentikasi MFA"
+
+//mengirim branch ke GitHub
+git push -u origin fitur-mfa
