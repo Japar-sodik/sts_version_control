@@ -1,0 +1,14 @@
+1. Keuntungan utama pembatasan branch"main"
+
+Pembatasan branch"main"membuat kode utama lebih aman dan stabil karena perubahan harus diperiksa terlebih dahulu sebelum digabungkan.
+
+2. Alur Git
+
+-Buat branch fitur
+-Kerjakan perubahan
+-`git add`
+-`git commit`
+-`git push` ke GitHub
+-Buat Pull Request
+-Review
+-Merge ke `main`
