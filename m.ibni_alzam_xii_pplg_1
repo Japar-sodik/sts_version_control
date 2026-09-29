@@ -1,0 +1,11 @@
+pembatasan branch main berguna agar kode utama tidak langsung berubah saat ada fitur baru yang masih dikerjakan. jadi kalau terjadi kesalahan, branch main tetap aman.
+
+2.perintah Git:
+
+git clone https://github.com/japar-sodik/sts_version_control.git
+cd sts_version_control
+git checkout -b jawaban-Muhammad_Ibni_Alzam_XII_PPLG_3
+git status
+git add .
+git commit -m "menambahkan jawaban studi kasus"
+git push origin jawaban-Muhammand_Ibni_Alzam_XII_PPLG_3
