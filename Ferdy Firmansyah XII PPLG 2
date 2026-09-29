@@ -1,0 +1,12 @@
+Nama: Ferdy Firmansyah
+Kelas: XII PPLG 2
+
+1. Keuntungan Pembatasan Branch Main
+* Mencegah production crash atau error fatal pada sistem utama.
+* Menjaga stabilitas kode agar selalu siap rilis.
+
+2. Perintah Git
+* git checkout -b ferdy_12pplg
+* git add .
+* git commit -m "feat: menambah file jawaban"
+* git push origin ferdy_12pplg
