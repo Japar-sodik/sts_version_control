@@ -1,0 +1,9 @@
+1. Keuntungan Utama Pembatasan Branch MainPembatasan langsung (branch protection) pada branch main memiliki beberapa keuntungan penting:   Mencegah Kerusakan/Crash di Lingkungan Produksi: Mengurangi risiko terdorongnya kode yang belum stabil, buggy, atau mengalami error ke branch main yang menjalankan sistem live.   Memfasilitasi Code Review: Memastikan setiap perubahan kode melewati proses peninjauan (via Pull Request) oleh anggota tim lain sebelum digabungkan.   Menjaga Riwayat Git Tetap Rapi dan Stabil: Branch main selalu berisi kode yang dapat berfungsi dengan baik (production-ready).   Meningkatkan Kolaborasi Tim: Memungkinkan banyak pengembang mengerjakan fitur berbeda secara paralel di branch mereka masing-masing tanpa saling bertabrakan.   2. Urutan Perintah Git (Feature Branch Workflow)Berikut langkah-langkah dan perintah Git dari awal pembuatan branch hingga siap ditinjau via Pull Request:   Langkah 1: Memastikan Berada di Branch Main & TerupdateBashgit checkout main
+git pull origin main
+Langkah 2: Membuat dan Beralih ke Branch Fitur BaruMembuat branch khusus untuk fitur 'Autentikasi Multi-faktor (MFA)':   Bashgit checkout -b feature/mfa-authentication
+Langkah 3: Menyimpan Progres Lokal (Stage & Commit)Setelah menambahkan atau mengubah file untuk fitur MFA, simpan perubahan tersebut:   Bash# Menambahkan semua file yang diubah ke staging area
+git add .
+
+# Menyimpan perubahan lokal dengan pesan commit yang jelas
+git commit -m "feat: tambahkan implementasi autentikasi multi-faktor (MFA)"
+Langkah 4: Mengirimkan Branch ke Remote Repository (GitHub)Unggah branch fitur lokal ke repository GitHub:   Bashgit push -u origin feature/mfa-authentication
