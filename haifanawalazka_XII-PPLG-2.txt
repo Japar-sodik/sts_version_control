@@ -1,0 +1,16 @@
+1. keuntungan membatasi branch main biar branch utama tetap aman dan tidak gampang error. jadi kalau mau bikin fitur baru, dikerjakan di branch sendiri dulu, baru dicek dan digabung ke main kalau sudah aman
+
+2. Membuat branch fitur baru
+git checkout -b feature/mfa
+
+Mengecek status perubahan
+git status
+
+Menambahkan perubahan
+git add .
+
+Menyimpan progres ke repository lokal
+git commit -m "Menambahkan fitur autentikasi MFA"
+
+Mengirim branch ke GitHub
+git push -u origin feature/mfa
