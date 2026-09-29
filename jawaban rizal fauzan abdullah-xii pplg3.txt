@@ -1,0 +1,23 @@
+Berikut adalah jawaban dan analisis perintah Git sesuai dengan skenario tersebut:
+1. Keuntungan Utama Pembatasan Branch Main
+Keuntungan utamanya adalah menjaga stabilitas sistem operasional (production/main code) agar tidak rusak atau mengalami bug yang fatal. Branch main berfungsi sebagai sumber kode yang siap dipakai (production-ready). Jika semua orang bisa langsung commit ke main, risiko bentrok kode (merge conflict) dan masuknya kode bermasalah tanpa peninjauan sangat tinggi.
+Dengan membatasi main:
+  Sistem/website utama dipastikan selalu berjalan stabil tanpa downtime.
+  Setiap fitur baru harus melewati proses peninjauan ulang (code review) dan uji coba lewat Pull Request (PR) sebelum diuji ke main.
+  Kerja tim jadi lebih teratur karena tiap developer fokus bekerja di area/branch fitur masing-masing tanpa takut merusak kode rekan setim.
+2. Urutan Perintah Git dari Branch Baru sampai Pull Request
+Berikut adalah seluruh perintah Git yang perlu kamu jalankan secara berurutan:
+Memastikan posisi berada di branch main dan mengambil pembaruan kode terbaru dari remote:
+git checkout main
+git pull origin main
+Membuat branch baru khusus fitur MFA dan langsung berpindah ke branch tersebut:
+git checkout -b feature/authentication-mfa
+Memeriksa status perubahan berkas setelah kamu selesai mengerjakan kode fitur MFA:
+git status
+Menambahkan seluruh file perubahan/fitur baru ke dalam staging area:
+git add .
+Menyimpan progres perubahan ke dalam repository lokal beserta pesan yang jelas:
+git commit -m "Add Multi-Factor Authentication (MFA) feature"
+Mengirimkan branch fitur baru beserta commits ke GitHub (remote repository):
+git push -u origin feature/authentication-mfa
+Setelah perintah terakhir dijalankan, kamu tinggal membuka repositori di GitHub dan klik tombol "Compare & pull request" untuk membuat Pull Request agar kodenya bisa ditinjau oleh ketua tim.
