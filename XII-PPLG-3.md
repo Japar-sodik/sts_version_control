@@ -9,7 +9,11 @@ Selain itu, anggota tim bisa mengerjakan fitur masing-masing di branch yang berb
 
 ### 2. Perintah Git yang digunakan
 
-Membuat branch untuk fitur MFA:
+Berikut perintah Git yang digunakan mulai dari membuat branch fitur, menyimpan perubahan, sampai mengirim branch ke GitHub:
 
 ```bash
 git checkout -b fitur-mfa
+git status
+git add .
+git commit -m "feat: tambah fitur autentikasi multi-faktor"
+git push -u origin fitur-mfa
