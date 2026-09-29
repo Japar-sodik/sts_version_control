@@ -16,3 +16,5 @@ git commit -m "feat: menambahkan jawaban soal KK-2"
 
 # Mengirim branch ke GitHub
 git push -u origin jawaban-siti_fannia_xii_pplg_3
+
+Setelah berhasil dikirim ke GitHub, langkah selanjutnya adalah mengajukan Pull Request agar hasil pekerjaan bisa diperiksa oleh guru sebelum digabungkan ke repository utama.
