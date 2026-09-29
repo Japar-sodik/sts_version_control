@@ -1,0 +1,7 @@
+1Supaya kode yang ada di  main  selalu aman dan stabil Kalau semua langsung commit ke  main kalau ada yang salah kodenya bisa langsung bikin sistem error Jadi  main  cuma diisi kode yang udah diperiksa dan pasti berfungsi
+ 
+ 
+2.git checkout b jawaban-pandu_XII pplg 1
+git add 
+git commit -m "tambah jawaban"
+git push origin jawaban-pandu_XII pplg 1
