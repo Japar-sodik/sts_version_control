@@ -1,0 +1,14 @@
+1.keuntungan utama cabang perdagangan 
+pembatasan cabang "main" membuat kode utama lebih aman
+dan stabil karena perubahan harus di periksa terlebih dahulu
+sebelum di gabungkan
+
+2.alur git
+1.buat atur cabang
+2.kerjakan perubahan
+3.git add
+4.git commit
+5.git push ke github
+6.buat pull request
+7.riview
+8.merge ke main
