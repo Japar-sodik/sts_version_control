@@ -1,0 +1,12 @@
+1. keuntungan cabang utama perdagangan 
+
+pembatasan cabang utama "main"bikin kode jadi aman
+sama stabil karena perubahan harus di periksa sebelum
+di gabungin
+
+2.alur git
+
+-git checkout -b fitur-baru
+-git add --all
+-git commit -m "bikin fitur baru"
+-git push origin fitur-baru
